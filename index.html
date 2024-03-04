@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+    <title>Yellow Sheet Creator</title>
+    <meta name="author" content="Connor Leftwich">
+    <link rel="icon" href="school_logo.png" type="image/png" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="styleScript.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="navScript.js" defer></script>
+</head>
+
+<body>
+    <nav class="nav" id="nav" onload=navScript.js></nav>
+    <div class="mainBody" id="mainBody">
+        <div class="options">
+            <div class="optionBoxes">
+                <fieldset class="fileInputField">
+                    <legend>Input Files:</legend>
+    
+                    <label class="fileLabel" for="grdfile">U-GB101.csv File:</label>
+                    <input class="fileInput" type="file" name="file1" id="grdfile"/>
+                
+                    <label class="fileLabel" for="attfile">ATC401.csv File:</label>
+                    <input class="fileInput" type="file" name="file2" id="attfile"/>
+                
+                    <label class="fileLabel" for="rosfile">STU409.csv File:</label>
+                    <input class="fileInput" type="file" name="file3" id="rosfile"/>
+                
+                    <label class="fileLabel" for="calc">Update Table:</label>
+                    <input class="calc_button" id="calc" type="button" value="Load Files"/>
+                    
+                </fieldset>
+            </div>
+            <div class="optionBoxes">
+                <fieldset class="searchField">
+                    <legend>Search for students:</legend>
+                    
+                    <label class="searchLabel" for="searchBoxFirstName">First Name:</label>
+                    <input class="searchInput" type="text" id="searchBoxFirstName"/>
+                
+                    <label class="searchLabel" for="searchBoxLastName">Last Name:</label>
+                    <input class="searchInput" type="text" id="searchBoxLastName"/>
+                
+                    <label class="searchLabel" for="searchBoxNumb">Student ID:</label>
+                    <input class="searchInput" type="number" id="searchBoxNumb"/>
+                    
+                </fieldset>
+            </div>
+            <div class="optionBoxes">
+                <fieldset class="hexterSelection" id="hexterSelection">
+                    <legend>Hexter Selection:</legend>
+                    <div>
+                        <label class="hexLabel" for="hexterSelect1">Hexter 1:</label>
+                        <input type="radio" id="hexterSelect1" name="hexSelect" value="hex1">
+                    </div>
+                    <div>
+                        <label class="hexLabel" for="hexterSelect2">Hexter 2:</label>
+                        <input type="radio" id="hexterSelect2" name="hexSelect" value="hex2">
+                    </div>
+                    <div>
+                        <label class="hexLabel" for="hexterSelect3">Hexter 3:</label>
+                        <input type="radio" id="hexterSelect3" name="hexSelect" value="hex3">
+                    </div>
+                    <div>
+                        <label class="hexLabel" for="hexterSelect4">Hexter 4:</label>
+                        <input type="radio" id="hexterSelect4" name="hexSelect" value="hex4">
+                    </div>
+                    <div>
+                        <label class="hexLabel" for="hexterSelect5">Hexter 5:</label>
+                        <input type="radio" id="hexterSelect5" name="hexSelect" value="hex5" checked>
+                    </div>
+                    <div>
+                        <label class="hexLabel" for="hexterSelect6">Hexter 6:</label>
+                        <input type="radio" id="hexterSelect6" name="hexSelect" value="hex6">
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    <div class="output">
+        Output:
+    </div>
+    <table class="outputTable" id="outputTable"></table>
+
+</body>

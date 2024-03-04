@@ -1,0 +1,147 @@
+:root {
+	--main-bg-color: #ffffff;
+	--logo-yellow-color: #cc9a01;
+	--logo-dragon-color: #231f20;
+	--logo-border-color: #010101;
+	--hover-yellow-color: #c9af62;
+	--text-color: #000000;
+	--button-color: #ff7e7e;
+	--table-border-color: #444444;
+}
+
+html {
+	min-width: 100%;
+	background-size: contain;
+	overflow-x: hidden;
+}
+
+body {
+	background-color: var(--main-bg-color);
+	margin: 0;
+	width: 100%
+}
+
+.nav {
+	display: flex;
+	width: 100%;
+	height: 3em;
+	background-color: var(--logo-yellow-color);
+}
+
+
+input {
+	padding: 5px;
+}
+
+
+.options {
+	margin: 10px;
+	width: 100%;
+	display: flex;
+}
+
+.optionBoxes {
+	box-sizing: border-box;
+	display: flex;
+}
+
+legend {
+	font-weight: bold;
+}
+
+.searchField, .fileInputField {
+	display: grid;
+	grid-template-columns: max-content max-content;
+}
+
+.searchLabel, .fileLabel {
+	align-self: center;
+	justify-self: right;
+}
+
+.fileInput {
+	overflow: hidden;
+}
+
+.searchInput {
+	max-height: 1.1em;
+	align-self: center;
+	margin-left: 5px;
+}
+
+.output {
+	margin: 10px;
+}
+
+.outputTable {
+	margin: 10px;
+}
+
+
+
+
+
+
+
+/* tbody:nth-child(even) {
+    background-color: #000000;
+} */
+
+.calc_button {
+	margin: 5px;
+	border-width: 3px;
+	border-color: #ff6565;
+	border-radius: 5px;
+	/* border-color: #000000; */
+	width: fit-content;
+	background-color: var(--button-color);
+}
+
+/* .label {
+	box-sizing: border-box;
+	display:inline-block;
+	min-width: 10em; */
+	/* border: 5px solid black; */
+	/* text-align: right;
+} */
+
+table {
+	border-collapse: collapse;
+	border: 2px solid var(--table-border-color);
+	letter-spacing: 1px;
+	font-size: 1rem;
+}
+
+td, th {
+	border: 2px solid var(--table-border-color);
+	padding: 5px;
+}
+
+td {
+	text-align: center;	
+}
+
+caption {
+	padding: 10px;
+}
+
+.navButton {
+	background-color: var(--logo-yellow-color);
+	align-self: center;
+	height: 100%;
+	border-radius: 0;
+	border-color: var(--logo-border-color);
+	font-size: 24px;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	display: flex;
+	flex: 1 1 0px;
+}
+
+#homeButton {
+	border-left-width: 2px;
+}
+
+.navButton:hover {
+	background-color: var(--hover-yellow-color);
+}
