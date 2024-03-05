@@ -2,16 +2,22 @@
 <head>
     <title>Yellow Sheet Creator</title>
     <meta name="author" content="Connor Leftwich">
-    <link rel="icon" href="assets/images/school_logo.png" type="image/png">
+    <link rel="icon" href="assets/images/school_logo.png" type="image/png"/>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="assets/scripts/styleScript.js" defer></script>
     <script src="assets/scripts/script.js" defer></script>
-    <script src="assets/scripts/navScript.js" defer></script>
+    <!-- <script src="assets/scripts/navScript.js" defer></script> -->
 </head>
 
 <body>
-    <nav class="nav" id="nav" onload=navScript.js></nav>
-    <div class="mainBody" id="mainBody">
+    <nav class="nav" id="nav">
+        <img src="assets/images/school_logo.png" alt="CHS Logo" class="schoolLogo">
+        <input type="button" class="navButton" id="homeButton" value="Home">
+        <input type="button" class="navButton" id="statButton" value="Stats">
+        <input type="button" class="navButton" id="printButton" value="Print">
+        <input type="button" class="navButton" id="helpButton" value="Help">
+    </nav>
+    <main class="mainBody" id="mainBody">
         <div class="options">
             <div class="optionBoxes">
                 <fieldset class="fileInputField">
@@ -83,10 +89,10 @@
                 </fieldset>
             </div>
         </div>
-    </div>
-    <div class="output">
-        Output:
-    </div>
-    <table class="outputTable" id="outputTable"></table>
+        <div class="output">
+            Output:
+        </div>
+        <table class="outputTable" id="outputTable"></table>
+    </main>
 
 </body>

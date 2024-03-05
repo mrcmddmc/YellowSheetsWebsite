@@ -17,7 +17,7 @@ makePrint();
 
 function makeLogo() {
     const logo = document.createElement("img");
-    logo.src = "school_logo.png";
+    logo.src = "assets/images/school_logo.png";
     pages.appendChild(logo);
 }
 
