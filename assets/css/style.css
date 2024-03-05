@@ -5,7 +5,10 @@
 	--logo-border-color: #010101;
 	--hover-yellow-color: #c9af62;
 	--text-color: #000000;
-	--button-color: #ff7e7e;
+	--red-button-color: #ff5e5e;
+	--red-button-color-hover: #ff8e8e;
+	--green-button-color: #5eff5e;
+	--green-button-color-hover: #8eff8e;
 	--table-border-color: #444444;
 }
 
@@ -77,6 +80,34 @@ legend {
 	margin: 10px;
 }
 
+.databaseButton {
+	display: grid;
+	grid-template-columns: auto;
+	row-gap: 15px;
+}
+
+.button {
+	border-width: 1px;
+	border-radius: 5px;	
+	border-color: #010101;
+}
+
+.redButton {
+	background-color: var(--red-button-color);
+}
+
+.redButton:hover {
+	background-color: var(--red-button-color-hover);
+}
+
+.greenButton {
+	background-color: var(--green-button-color);
+}
+
+.greenButton:hover {
+	background-color: var(--green-button-color-hover);
+}
+
 
 
 
@@ -87,14 +118,9 @@ legend {
     background-color: #000000;
 } */
 
-.calc_button {
+.resetButton {
 	margin: 5px;
-	border-width: 3px;
-	border-color: #ff6565;
-	border-radius: 5px;
-	/* border-color: #000000; */
 	width: fit-content;
-	background-color: var(--button-color);
 }
 
 /* .label {
